@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>Todo list</h1>
+
+            <div class="butn">
+                <button onclick="clickBtn()"><i class="fa fa-plus"></i></button>
+                <h3>create todo list</h3>
+            </div>
+
+        </header>
+        <section>
+            <div class="modal hidden" id="modal">
+                <button onclick="clickBtn()" class="modal-delbtn"><i class="fa fa-close"></i></button>
+                <div class="body">
+                    <form class="form">
+                        <input type="title" id="task-title" placeholder="Title" />
+                        <input type="submit" id="new-task-submit" placeholder="Add task" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="mains">
+
+            <main class="main1">
+                <h2>Incompleted Tasks</h2>
+                <div class="line"></div>
+                <section class="task-list" id="task">
+
+
+                </section>
+            </main>
+            <main class="main1">
+                <h2>Completed Task</h2>
+                <div class="line"></div>
+                <section class="task-list task-list2" id="complete">
+
+
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
